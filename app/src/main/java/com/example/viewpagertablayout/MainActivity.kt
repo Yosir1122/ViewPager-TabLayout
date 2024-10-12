@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         myPageAdapter = MyPageAdapter(MyData.list)
         binding.pg.adapter = myPageAdapter
+        binding.myTab.setupWithViewPager(binding.pg)
         loadTabLayout()
     }
 
